@@ -1,0 +1,266 @@
+.navbar {
+    background-color: #083c6a;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: turquoise;
+    margin: 10px 20px;
+    font-family: cursive;
+    font-size: 1em;
+}
+
+.nav-link {
+    color: turquoise;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: turquoise;
+}
+
+
+.navbar-nav .nav-item a {
+    text-decoration: none;
+    color: turquoise;
+    margin: 10px 20px;
+    font-family: cursive;
+    font-size: 1em;
+}
+
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: gold;
+}
+
+section {
+    padding: 100px 200px;
+
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    /* viewport height (görünüm yüksekliği) */
+    display: flex;
+    align-items: center;
+    background: url(/images/jonatan-pie-3l3RwQdHRHg-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* margin-left: -15px; */
+}
+
+.main h2 {
+    color: gold;
+    font-size: 1.4em;
+    /* *16 */
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: goldenrod;
+    font-size: 2em;
+    font-weight: 10;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.horezantalcards {
+    margin-top: -80px;
+    margin-left: -110px;
+    width: 80%;
+}
+
+
+
+.horezantalcards .title {
+    display: flex;
+    justify-content: center;
+    color: turquoise;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.hep {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Kart {
+    font-family: cursive;
+    color: #27496d;
+
+    background-color: #d3eaf7;
+
+    /* background-color: #d3eaf7; */
+    /* background-color: #b2ebf2; */
+    width: 1000px;
+    box-shadow: 10px 17px 15px rgba(0, 0, 0, 25%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+
+}
+
+.sertifika1 {
+    width: 30%;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 100px;
+    /* justify-content: flex-start; */
+    /* Sol tarafa hizalama */
+}
+
+.info {
+    width: 60%;
+    margin: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    justify-content: left;
+    /* Ortaya hizalama */
+    flex-direction: column;
+    /* Dikey yönde sıralama */
+}
+
+.info h3 {
+    color: turquoise;
+    font-size: 20px;
+}
+
+.vertecalcards {
+    margin-top: -80px;
+    margin-left: 110px;
+    width: 80%;
+}
+
+.vertecalcards .title2 {
+    display: flex;
+    justify-content: center;
+    color: turquoise;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.hep2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.Kart2 {
+    font-family: cursive;
+    background-color: #001f3f;
+    color: gold;
+    /* background-color: #b2ebf2; */
+    width: 1000px;
+    box-shadow: 10px 17px 15px rgba(0, 0, 0, 25%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.yemekphoto {
+    margin: 10px;
+    /* margin-top: 30px; */
+    border-radius: 25px;
+}
+
+.favorateyemek-info {
+    width: 65%;
+    margin: 10px;
+    display: inline-block;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.favorateyemek-info h3 {
+    color: turquoise;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .Kart {
+        width: 100%;
+
+        margin-left: 100px;
+        margin-right: auto;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .Kart2 {
+        width: 100%;
+
+        margin-left: 10 px;
+        margin-right: 30px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .horezantalcards {
+        width: 100%;
+
+        margin-top: 30px;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Kart2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .favorateyemek-info h3 {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .favorateyemek-info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .yemekphoto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
