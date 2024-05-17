@@ -1,0 +1,136 @@
+.navbar {
+    background-color: #083c6a;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: turquoise;
+    margin: 10px 20px;
+    font-family: cursive;
+    font-size: 1em;
+}
+
+.nav-link {
+    color: turquoise;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: turquoise;
+}
+
+
+.navbar-nav .nav-item a {
+    text-decoration: none;
+    color: turquoise;
+    margin: 10px 20px;
+    font-family: cursive;
+    font-size: 1em;
+}
+
+
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: gold;
+}
+
+aside {
+    /* margin-top: 23px; */
+    width: 20%;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: -6px;
+    margin-top: px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+    height: 813PX;
+    overflow-y: hidden;
+}
+
+aside img {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+#personal {
+    display: block;
+    justify-content: center;
+    width: 85%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: white solid 1px;
+    height: 250px;
+    background-image: url("/images/1715165212715.jpg");
+    background-size: cover;
+}
+
+.cvaside h2,
+.cvaside h3 {
+    margin-left: 25px;
+}
+
+.skills {
+    margin-left: 30px;
+}
+
+section {
+    margin-top: 40px;
+    margin-left: 55px;
+}
+
+section h3 {
+    color: #083c6a;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+section table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+section th,
+section td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+section th {
+    background-color: #083c6a;
+    color: #fff;
+}
+
+section td {
+    background-color: #f4f4f4;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: -2px;
+    margin-left: -5px;
+    background-image: url(/images/casey-horner-O0R5XZfKUGQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
