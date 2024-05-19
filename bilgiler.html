@@ -1,0 +1,88 @@
+<!--/****************************************************************************
+**					SAKARYA ÜNİVERSİTESİ
+**				BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+**				    BİLGİSAYAR MÜHENDİSLİĞİ BÖLÜMÜ
+**				         Web Teknoloji
+**					2023-2024 BAHAR DÖNEMİ
+**	
+**				ÖĞRENCİ ADI:             Khaled Abdullatif
+**				ÖĞRENCİ NUMARASI:         B221210573
+**              DERSİN ALINDIĞI GRUP.:    1. Öğretim B
+***************************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgiler</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .form-data {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-data p {
+            margin: 10px 0;
+        }
+
+        .form-data ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .form-data li {
+            background-color: #e9e9e9;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+    <h1>Form Data</h1>
+    <div id="formData">
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $name = htmlspecialchars($_POST["name"]);
+            $email = htmlspecialchars($_POST["email"]);
+            $message = htmlspecialchars($_POST["message"]);
+            $country = htmlspecialchars($_POST["country"]);
+            $password = htmlspecialchars($_POST["password"]);
+            $number = htmlspecialchars($_POST["number"]);
+            $cinsiyet = htmlspecialchars($_POST["Cinsiyet"]);
+            $sebeb = isset($_POST["sebeb"]) ? $_POST["sebeb"] : array();
+
+            echo "<p><strong>Adı Soyadı:</strong> $name</p>";
+            echo "<p><strong>Email:</strong> $email</p>";
+            echo "<p><strong>Message:</strong> $message</p>";
+            echo "<p><strong>Country:</strong> $country</p>";
+            echo "<p><strong>Password:</strong> $password</p>";
+            echo "<p><strong>Number:</strong> $number</p>";
+            echo "<p><strong>Cinsiyet:</strong> $cinsiyet</p>";
+            echo "<p><strong>Sebeb:</strong></p><ul>";
+            foreach ($sebeb as $item) {
+                echo "<li>$item</li>";
+            }
+            echo "</ul>";
+        } else {
+            echo "Invalid request!";
+        }
+        ?>
+    </div>
+</body>
+
+</html>
